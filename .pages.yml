@@ -1,0 +1,30 @@
+media:
+  input: src/media
+  output: /media
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: src/content/blog
+    fields:
+      - name: title
+        type: string
+      - name: description
+        type: text
+      - name: pubDate
+        type: date
+      - name: heroImage
+        type: media
+      - name: body
+        type: rich-text
+  - name: site
+    label: Site settings
+    type: file
+    path: src/_data/site.json
+    fields:
+      - name: title
+        type: string
+      - name: description
+        type: text
+      - name: url
+        type: string
