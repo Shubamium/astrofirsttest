@@ -14,7 +14,7 @@ content:
       - name: pubDate
         type: date
       - name: heroImage
-        type: media
+        type: image
       - name: body
         type: rich-text
   - name: site
